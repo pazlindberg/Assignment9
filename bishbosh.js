@@ -6,6 +6,7 @@ function bishBosh(bish,bosh,iterations)
 	}
 	else
 	{
+		document.getElementById("bishBoshOut").innerHTML = 'here we go!<br />';
 		for(i=1;i<=iterations;i++)
 		{
 			let s="";
@@ -28,5 +29,8 @@ function bishBosh(bish,bosh,iterations)
 
 function bishBoshRun()
 {
-	bishBosh(1,2,20);
+	let bishValue=document.getElementById("bish").value;
+	let boshValue=document.getElementById("bosh").value;
+	let iterationsValue=document.getElementById("iterations").value;
+	bishBosh(bishValue,boshValue,iterationsValue);
 }
