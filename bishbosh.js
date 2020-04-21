@@ -14,7 +14,7 @@ function bishBosh()
 		
 		else
 			s=i;
-		
-		document.write(s + " ");
+		document.getElementById("bishBoshOut").innerHTML += s+" ";
+		//document.write(s + " ");
 	}
 }
