@@ -1,29 +1,33 @@
 <!doctype html>
 
-<html>
+<html lang="sv">
+	<head>
+		<meta charset="utf-8" />
+		<title>Assignment 9 | bish-bosh</title>
+	</head>
 	<body>
-		<script>
-			for(i=1;i<=100;i++)
-			{
-				let s="";
-				if((i%3===0)&&(i%4===0))
-				{
-					s="Bish-Bosh";
-				}
-				else if(i%3===0)
-				{
-					s="Bish";
-				}
-				else if(i%4===0)
-				{
-					s="Bosh";
-				}
-				else
-				{
-					s=i;
-				}
-				document.write(s + " ...");
-			}
+		<header>
+			<h1>BISH-BOSH</h1>
+			<hr />
+		</header>
+		<section>
+			<form>
+				<label for="bish">Bish:</label>
+				<input type="number" id="bish" name="bish" min="1" max="500" />
+				
+				<label for="bish">Bosh:</label>
+				<input type="number" id="bosh" name="bosh" min="1" max="500" />
+				
+				<label for="bish">Iterationer:</label>
+				<input type="number" id="iterations" name="iterations" min="1" max="500" />
+			</form>
+		</section>
+		<script src="bishbosh.js">
+			
 		</script>
+		<footer>
+			<hr />
+			&copy;opyright Anderz Lindberg <date>2020-04-21</date>
+		</footer>
 	</body>
 </html>
